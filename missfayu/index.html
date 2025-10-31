@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- THIS LINE IS ESSENTIAL for mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts (to match salon theme) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (in case you want icons later) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <body>
+
+    <!-- The Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <!-- Your Logo -->
+            <a href="#" class="logo">Marias beautyMW</a>
+            
+            <!-- Your Navigation Menu (NO hamburger) -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                     <li><a href="#">Shop</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                   
+                    
+                </ul>
+            </nav>
+
+            <!-- This empty div is a trick to balance the logo -->
+            <!-- It makes the central nav menu truly centered -->
+            <div class="navbar-right-spacer"></div>
+
+        </div>
+    </header>
+
+    <!-- (NO OVERLAY NEEDED) -->
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                
+                <h1>Marias<br>BeautyMW</h1>
+                
+                <p class="description"><h5> offer a slice of heaven where beauty and relaxat.</h5></p>
+               
+                <button class="explore-btn">Explore Services</button>
+            </div>
+        </div>
+    </section>
+
+    <div>
+       
+
+        <section class="about-section">
+
+  <div class="about-image-column">
+    <div class="about-image-wrapper">
+      <img 
+        src="assets/images/ceoilim.jpeg" 
+        alt="Woman at makeup vanity" 
+        class="about-main-image"
+      >
+
+      <img 
+        src="assets/images/product (2).jpeg" 
+        alt="Makeup application" 
+        class="about-overlapping-image"
+      >
+
+      <div class="about-highlight">
+        <p>We offer a wide range of services to help</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-text-column">
+    <h2>Your Beauty And Success Starts Here</h2>
+    <p>
+      We offer a wide range of services to help you look and feel your best.
+      Our experienced stylists are dedicated to bringing your vision to life.
+    </p>
+  </div>
+
+</section>
+
+
+
+  <!-- Services Section -->
+    <section id="services-section" class="services-section">
+        <h3>MARIAS BEAUTY SERVICES</h3>
+        <div class="services-grid">
+        <div class="service-card">
+            <div class="service-image-container">
+            <!-- Using placeholder images as "assets/images/..." won't load -->
+            <img src="assets/images/service (4).jpeg" alt="Hairdresser services">
+            </div>
+            <p>Hairdresser services</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image-container">
+            <img src="assets/images/service (3).jpeg" alt="Manicure-pedicure">
+            </div>
+            <p>Manicure-pedicure</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image-container">
+            <img src="assets/images/service (1).jpeg" alt="Facial treatments">
+            </div>
+            <p>Facial treatments</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image-container">
+            <img src="assets/images/service (2).jpeg" alt="Body procedures">
+            </div>
+            <p>Body procedures</p>
+        </div>
+        </div>
+
+        <p class="services-disclaimer">
+        Proudly serving confidence and style, right here at Marias Beauty MW. Our services are designed to enhance your natural .
+        </p>
+    </section>
+
+
+<section class="shop-section">
+        <h2>Our shop</h2>
+
+        <div class="product-grid visible-products">
+            <div class="product-card">
+                <img src="assets/images/product (1).jpeg" alt="wig 1" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Sleek Modern Watch</h3>
+                    <div class="product-footer">
+                        <p class="price">k200,000</p>
+                        <button class="buy-btn" 
+                                data-product-name="wig 1" 
+                                data-product-image="assets/images/product (1)" 
+                                aria-label="Buy on WhatsApp">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/product (3).jpeg" alt="wig 2" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">wig 2</h3>
+                    <div class="product-footer">
+                        <p class="price">k300,000</p>
+                        <button class="buy-btn" 
+                                data-product-name="Red Racing Sneaker" 
+                                data-product-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                                aria-label="Buy on WhatsApp">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="more-products" class="product-grid hidden-products">
+            <div class="product-card">
+                <img src="assets/images/product (4).jpeg" alt="wig 4" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">wig 4</h3>
+                    <div class="product-footer">
+                        <p class="price">k400,000</p>
+                        <button class="buy-btn" 
+                                data-product-name="wig 4" 
+                                data-product-image="assets/images/product (4).jpeg"
+                                aria-label="Buy on WhatsApp">
+                             <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="assets/images/product (5).jpeg" alt="wig 5" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">wig 5</h3>
+                    <div class="product-footer">
+                        <p class="price">K 240000</p>
+                        <button class="buy-btn" 
+                                data-product-name="Classic Sunglasses" 
+                                data-product-image="https://images.unsplash.com/photo-1572635196237-0b0b5a4529aa"
+                                aria-label="Buy on WhatsApp">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="product-card">
+                <img src="assets/images/product (6).jpeg" alt="wig 6" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">wig 6</h3>
+                    <div class="product-footer">
+                        <p class="price">k140,000</p>
+                        <button class="buy-btn" 
+                                data-product-name="Brown Leather Shoes" 
+                                data-product-image="assets/images/product (6).jpeg"
+                                aria-label="Buy on WhatsApp">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="see-more-container">
+            <button id="see-more-btn">See More</button>
+        </div>
+    </section>
+
+
+
+    <section class="blog-section">
+  <div class="blog-container">
+    
+
+    <!-- Right Content -->
+    <div class="blog-content">
+      <h2>Beauty Studio in Ziepniekkalns “Bagira”</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="assets/images/service.jpeg" alt="Gift card" class="blog-card-img">
+          <p>A great gift for your relatives and friends will be our salon gift card, which will allow you to use any services from our range of offers.</p>
+          <button class="contact-btn">Contact us</button>
+          
+        </div>
+        
+        <div class="blog-card">
+          <img src="assets/images/Only at Malia_s beauty(JPG)_1.jpg" alt="Hairstyle" class="blog-card-img">
+          <p>Everyone is unique, and so should their hairstyle. When creating a cut, our hairdressers take into account each person’s individuality.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <h2>What Our Clients Say</h2>
+
+  <div class="testimonials-wrapper">
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <img src="assets/clients/client1.jpg" alt="Client 1" class="client-img" />
+        <p class="client-message">
+          "Absolutely love my new look! The stylists were so kind and professional.
+          I felt pampered the whole time."
+        </p>
+        <h4 class="client-name">— Sarah M.</h4>
+      </div>
+
+      <div class="testimonial">
+        <img src="assets/clients/client2.jpg" alt="Client 2" class="client-img" />
+        <p class="client-message">
+          "Best salon in town! My color turned out perfect. Highly recommend Bagira
+          Salon to everyone!"
+        </p>
+        <h4 class="client-name">— Lisa K.</h4>
+      </div>
+
+      <div class="testimonial">
+        <img src="assets/images/service (2).jpeg" alt="Client 3" class="client-img" />
+        <p class="client-message">
+          "Friendly atmosphere, beautiful interior, and the best results I've had!
+          Will definitely come again."
+        </p>
+        <h4 class="client-name">— Amanda J.</h4>
+      </div>
+
+      <div class="testimonial">
+        <img src="assets/images/service (4).jpeg" alt="Client 4" class="client-img" />
+        <p class="client-message">
+          "My stylist really listened to me and delivered exactly what I wanted.
+          A five-star experience!"
+        </p>
+        <h4 class="client-name">— Monica R.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="portfolio-section">
+  <h2>Our Portfolio</h2>
+  <div class="portfolio-container">
+    <div class="portfolio-item">
+      <img src="assets/images/fayu (1).jpg" alt="Elegant Hairstyle">
+      <div class="overlay">Elegant Curls</div>
+    </div>
+    <div class="portfolio-item">
+      <img src="assets/images/fayu (2).jpg" alt="Braids">
+      <div class="overlay">African Braids</div>
+    </div>
+    <div class="portfolio-item">
+      <img src="assets/images/fayu (3).jpg" alt="Color Style">
+      <div class="overlay">Color Blend</div>
+    </div>
+    <div class="portfolio-item">
+      <img src="assets/images/fayu (4).jpg" alt="Natural Look">
+      <div class="overlay">Natural Look</div>
+    </div>
+    <div class="portfolio-item">
+      <img src="assets/images/fayu (2).jpg" alt="Wedding Hair">
+      <div class="overlay">Wedding Style</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="team-section">
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="assets/images/miss 2.png" alt="Team Member 1">
+      <h3>Richard L. Channel</h3>
+      <p>CEO at Bright</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/images/miss 2.png" alt="Team Member 2">
+      <h3>Anna K. Smith</h3>
+      <p>Creative Director</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/images/team3.jpg" alt="Team Member 3">
+      <h3>James M. Brown</h3>
+      <p>Senior Stylist</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/images/team4.jpg" alt="Team Member 4">
+      <h3>Maria L. Gomez</h3>
+      <p>Makeup Artist</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    
+    <div class="faq-item">
+      <button class="faq-question">
+        What services do you offer?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We offer professional hair styling, makeup, nail care, spa treatments, and bridal packages — all tailored to your beauty goals.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Do I need to book an appointment?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, we recommend booking in advance to ensure your preferred time slot and stylist are available.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What payment methods do you accept?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>We accept cash, debit/credit cards, and mobile payments for your convenience.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I buy gift cards for friends or family?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Absolutely! We offer customizable gift cards for any occasion. They can be used for all salon services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-cta">
+      <h2>Start your beauty journey today with <br> confidence and style.</h2>
+      <div class="footer-buttons">
+        <button class="btn-primary">Get Started</button>
+        <button class="btn-secondary">Contact Us</button>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-bottom">
+    <div class="footer-brand">
+      <h3 class="brand-name">Marias beautyMW</h3>
+      <p>We bring out your inner beauty through creativity and care.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="link-column">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Hairdresser</a></li>
+          <li><a href="#">facial</a></li>
+          <li><a href="#">Nail Care</a></li>
+          <li><a href="#">pedicure & menicure</a></li>
+         
+        </ul>
+      </div>
+
+      <div class="link-column">
+        <h4>Resources</h4>
+        <ul>
+        
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
